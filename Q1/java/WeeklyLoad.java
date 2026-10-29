@@ -4,8 +4,8 @@ public class WeeklyLoad {
     static double total(double[] a) {
         // TODO(Q026): sum all elements of a.
         double sum = 0;
-        for (double kg : a) {
-            sum += kg;
+        for (int i = 0;i < a.length; i++) {
+            sum += a[i];
         }
         return sum;
     }
@@ -30,8 +30,8 @@ public class WeeklyLoad {
     static int countAbove(double[] a, double limit) {
         // TODO(Q026): count elements strictly greater than limit.
         int count = 0;
-        for (double kg : a) {
-            if (kg > limit) {
+        for (int i = 0; i < a.length; i++) {
+            if (a[i] > limit) {
                 count++;
             }
         }

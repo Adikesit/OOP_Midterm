@@ -6,8 +6,7 @@ public class OverloadException extends Exception {
 
     public OverloadException(String machineId, double requestedKg, double capacityKg) {
         // TODO(Q033): call super with a message; store the three fields.
-        super(String.format("%s cannot take %.1f kg (capacity %.1f kg)",
-                machineId, requestedKg, capacityKg));
+        super(machineId + " cannot take " + requestedKg + " kg (capacity " + capacityKg + " kg)");
         this.machineId = machineId;
         this.requestedKg = requestedKg;
         this.capacityKg = capacityKg;

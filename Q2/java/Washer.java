@@ -18,8 +18,9 @@ public class Washer {
         //   kg > capacityKg → throw new OverloadException(id, kg, capacityKg);
         //   otherwise print loaded message.
         if (kg <= 0) {
-            throw new IllegalArgumentException("weight must be positive: " + kg);
+            throw new IllegalArgumentException("Must be positive");
         }
+        
         if (kg > capacityKg) {
             throw new OverloadException(id, kg, capacityKg);
         }

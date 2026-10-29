@@ -1,8 +1,8 @@
 def total(a):
     # TODO(Q026): sum all elements of a.
     s = 0.0
-    for kg in a:
-        s += kg
+    for i in range(len(a)):
+        s += a[i]
     return s
 
 
@@ -24,8 +24,8 @@ def index_of_max(a):
 def count_above(a, limit):
     # TODO(Q026): count elements strictly greater than limit.
     count = 0
-    for kg in a:
-        if kg > limit:
+    for i in range(len(a)):
+        if a[i] > limit:
             count += 1
     return count
 
